@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>evi in taiwan</title>
+    <style>
+        body {
+            background-color: #fff8f0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding-top: 10%;
+            color: #444;
+        }
+        h1 {
+            font-size: 3em;
+            color: #ff6b81;
+        }
+        #countdown {
+            font-size: 5em;
+            margin-top: 20px;
+            color: #222;
+        }
+        .label {
+            font-size: 1.2em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1>evi in taiwan</h1>
+    <div id="countdown">0</div>
+    <div class="label">days left</div>
+
+    <script>
+        const targetDate = new Date("2025-08-31T00:00:00");
+        const countdownEl = document.getElementById("countdown");
+
+        function updateCountdown() {
+            const now = new Date();
+            const diff = targetDate - now;
+            const days = Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24)));
+            countdownEl.textContent = days;
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000 * 60 * 60);
+    </script>
+</body>
+</html>
