@@ -2,32 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>evi in taiwan</title>
+    <title>Evi in Taiwan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             background-color: #fff8f0;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
-            padding-top: 10%;
+            padding: 10vh 5vw;
             color: #444;
         }
         h1 {
-            font-size: 3em;
+            font-size: 7vw;
             color: #ff6b81;
+            margin-bottom: 2vh;
         }
         #countdown {
-            font-size: 5em;
-            margin-top: 20px;
+            font-size: 14vw;
             color: #222;
         }
         .label {
-            font-size: 1.2em;
+            font-size: 5vw;
             color: #888;
+        }
+
+        @media (min-width: 768px) {
+            h1 { font-size: 3em; }
+            #countdown { font-size: 5em; }
+            .label { font-size: 1.5em; }
         }
     </style>
 </head>
 <body>
-    <h1>evi in taiwan</h1>
+    <h1>Evi in Taiwan</h1>
     <div id="countdown">0</div>
     <div class="label">days left</div>
 
